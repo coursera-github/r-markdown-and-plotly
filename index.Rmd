@@ -1,0 +1,26 @@
+---
+title: "r-markdown-and-plotly website"
+output: slidy_presentation
+---
+
+# Overview
+
+This is a slidy presentation created in rmarkdown, containing a plotly plot
+
+## Date Created
+
+This presentation was created `r Sys.Date()`.
+
+```{r}
+Sys.Date()
+```
+
+# The Plot
+
+Here's a plot. Enjoy!
+
+```{r, warning=FALSE}
+suppressMessages(library(plotly))
+p <- plot_ly(mtcars, x = ~cyl, y = ~wt, color = ~factor(am), type = "bar")
+p
+```

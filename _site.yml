@@ -1,0 +1,6 @@
+name: r-markdown-and-plotly website
+navbar:
+    title: "Website"
+    left:
+        - text: "Plotly Plot"
+          href: index.html
